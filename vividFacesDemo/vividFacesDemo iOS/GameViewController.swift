@@ -190,7 +190,6 @@ class GameViewController: UIViewController {
         trainSrc!.trainWebImage(forTrain: trainBlock)
         self.gameView.setNeedsLayout()
     }
-    var test_del_vid = 0;
     @objc func trainVideo(sender : UIButton) {
         print("trainVideo button pressed!")
         highlightButton(currentBtn: sender)
@@ -198,10 +197,9 @@ class GameViewController: UIViewController {
         if trainSrc == nil {
             trainSrc = Landmark65TrainSrc()
         }
-        //let videoURL = Bundle.main.url(forResource: "Art.scnassets/MarcoRubio", withExtension: "mp4")
-        var videoURL  = NSURL(string: "http://192.168.2.4/a\(test_del_vid%4).mp4")
-        test_del_vid = test_del_vid + 1
-
+        let videoURL = Bundle.main.url(forResource: "Art.scnassets/MarcoRubio", withExtension: "mp4")
+        //var videoURL  = NSURL(string: "http://192.168.2.4/a\(test_del_vid%4).mp4")
+        UIInterfaceQMUI.shoToast(text: "Find a mp4 on the web and replace the code here. Make sure is support streaming.")
         let trainsrcBlock : (UIImage) -> ([[CGPoint]]?) = trainSrc!.trainImageBlock()
         self.gameController.sourceVideoTrain(previewView: self.previewView, videoURL: videoURL! as URL, trainsrcBlock: trainsrcBlock)
         self.gameView.setNeedsLayout()
