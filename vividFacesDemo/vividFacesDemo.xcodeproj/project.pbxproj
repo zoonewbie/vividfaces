@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		840DE4642105012200ADECA9 /* UIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DE4632105012200ADECA9 /* UIInterface.swift */; };
+		841B5458214C30590011C8D5 /* vividFaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B5457214C30590011C8D5 /* vividFaces.framework */; };
+		841B5459214C30590011C8D5 /* vividFaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 841B5457214C30590011C8D5 /* vividFaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		841B545C214C306D0011C8D5 /* vividFacesTrainHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B545B214C306D0011C8D5 /* vividFacesTrainHelper.framework */; };
+		841B545D214C306D0011C8D5 /* vividFacesTrainHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 841B545B214C306D0011C8D5 /* vividFacesTrainHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8457587420F0DA3A00FA0700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457587320F0DA3A00FA0700 /* AppDelegate.swift */; };
 		8457587620F0DA3A00FA0700 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457587520F0DA3A00FA0700 /* GameViewController.swift */; };
 		8457587920F0DA3A00FA0700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8457587720F0DA3A00FA0700 /* Main.storyboard */; };
 		8457588E20F0DA3A00FA0700 /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8457586A20F0DA3900FA0700 /* Art.scnassets */; };
 		8457589020F0DA3A00FA0700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8457586B20F0DA3A00FA0700 /* Assets.xcassets */; };
-		84619B73214BEE9800B5A002 /* vividFacesTrainHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84619B72214BEE9800B5A002 /* vividFacesTrainHelper.framework */; };
-		84619B74214BEE9800B5A002 /* vividFacesTrainHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84619B72214BEE9800B5A002 /* vividFacesTrainHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		84619B76214BEF1F00B5A002 /* vividFaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84619B75214BEF1E00B5A002 /* vividFaces.framework */; };
-		84619B77214BEF1F00B5A002 /* vividFaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84619B75214BEF1E00B5A002 /* vividFaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		848B0A51211C31B500261137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848B0A50211C31B500261137 /* LaunchScreen.storyboard */; };
 		84B2DFE521067A6C00FC886A /* GameControllerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B2DFE421067A6C00FC886A /* GameControllerImpl.swift */; };
 		84B49A1820F7E759009C9811 /* AnimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B49A1720F7E759009C9811 /* AnimView.swift */; };
@@ -36,14 +36,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		84619B71214BEE7500B5A002 /* Embed Frameworks */ = {
+		841B545A214C305A0011C8D5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				84619B77214BEF1F00B5A002 /* vividFaces.framework in Embed Frameworks */,
-				84619B74214BEE9800B5A002 /* vividFacesTrainHelper.framework in Embed Frameworks */,
+				841B5459214C30590011C8D5 /* vividFaces.framework in Embed Frameworks */,
+				841B545D214C306D0011C8D5 /* vividFacesTrainHelper.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +52,9 @@
 
 /* Begin PBXFileReference section */
 		840DE4632105012200ADECA9 /* UIInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIInterface.swift; sourceTree = "<group>"; };
+		841B5451214C2DC50011C8D5 /* vividFaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = vividFaces.framework; sourceTree = "<group>"; };
+		841B5457214C30590011C8D5 /* vividFaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vividFaces.framework; path = buildInFramework/vividFaces.framework; sourceTree = "<group>"; };
+		841B545B214C306D0011C8D5 /* vividFacesTrainHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vividFacesTrainHelper.framework; path = buildInFramework/vividFacesTrainHelper.framework; sourceTree = "<group>"; };
 		8457586A20F0DA3900FA0700 /* Art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Art.scnassets; sourceTree = "<group>"; };
 		8457586B20F0DA3A00FA0700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8457587020F0DA3A00FA0700 /* vividFacesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vividFacesDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,9 +62,6 @@
 		8457587520F0DA3A00FA0700 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		8457587820F0DA3A00FA0700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8457587D20F0DA3A00FA0700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84619B6E214BEE7400B5A002 /* vividFacesTrainHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = vividFacesTrainHelper.framework; sourceTree = "<group>"; };
-		84619B72214BEE9800B5A002 /* vividFacesTrainHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vividFacesTrainHelper.framework; path = "../../../../../Volumes/RamDisk/Library/Developer/Xcode/vividFacesTrainHelper-geyemdmlxvjilbedubzrnaxilodb/Build/Products/Debug-iphoneos/vividFacesTrainHelper.framework"; sourceTree = "<group>"; };
-		84619B75214BEF1E00B5A002 /* vividFaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = vividFaces.framework; sourceTree = "<group>"; };
 		848B0A50211C31B500261137 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B2DFE421067A6C00FC886A /* GameControllerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerImpl.swift; sourceTree = "<group>"; };
 		84B49A1720F7E759009C9811 /* AnimView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimView.swift; sourceTree = "<group>"; };
@@ -97,9 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84619B76214BEF1F00B5A002 /* vividFaces.framework in Frameworks */,
+				841B5458214C30590011C8D5 /* vividFaces.framework in Frameworks */,
 				D0F4D897EA12B2CECD5A540B /* Pods_vividFacesDemo_iOS.framework in Frameworks */,
-				84619B73214BEE9800B5A002 /* vividFacesTrainHelper.framework in Frameworks */,
+				841B545C214C306D0011C8D5 /* vividFacesTrainHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,9 +117,9 @@
 		8457586320F0DA3900FA0700 = {
 			isa = PBXGroup;
 			children = (
-				84619B75214BEF1E00B5A002 /* vividFaces.framework */,
-				84619B6E214BEE7400B5A002 /* vividFacesTrainHelper.framework */,
-				84619B72214BEE9800B5A002 /* vividFacesTrainHelper.framework */,
+				841B545B214C306D0011C8D5 /* vividFacesTrainHelper.framework */,
+				841B5451214C2DC50011C8D5 /* vividFaces.framework */,
+				841B5457214C30590011C8D5 /* vividFaces.framework */,
 				8457586820F0DA3900FA0700 /* vividFacesDemo Shared */,
 				8457587220F0DA3A00FA0700 /* vividFacesDemo iOS */,
 				8457587120F0DA3A00FA0700 /* Products */,
@@ -259,7 +259,7 @@
 				8457586D20F0DA3A00FA0700 /* Frameworks */,
 				8457586E20F0DA3A00FA0700 /* Resources */,
 				2B6E9842983F1D056F3E4987 /* [CP] Embed Pods Frameworks */,
-				84619B71214BEE7500B5A002 /* Embed Frameworks */,
+				841B545A214C305A0011C8D5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -527,7 +527,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NAN6CSU2J2;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
@@ -537,9 +537,9 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/ZIPFoundation\"",
 					"\"${PODS_ROOT}/TensorFlow-experimental/Frameworks\"",
-					"/Volumes/RamDisk/Library/Developer/Xcode/vividFacesTrainHelper-dzdrllkxnvfekndczipvsravunzv/Build/Products/Debug-iphoneos",
-					"/Volumes/RamDisk/Library/Developer/Xcode/vividFaces-aavhjbkorhzelwblcenmynfthdtn/Build/Products/Debug-iphoneos",
+					/Users/admin/Desktop/github/vividfaces/vividFacesDemo/buildInFramework,
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/buildInFramework",
 				);
 				INFOPLIST_FILE = "vividFacesDemo iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
@@ -563,7 +563,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NAN6CSU2J2;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
@@ -573,9 +573,9 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/ZIPFoundation\"",
 					"\"${PODS_ROOT}/TensorFlow-experimental/Frameworks\"",
-					"/Volumes/RamDisk/Library/Developer/Xcode/vividFacesTrainHelper-dzdrllkxnvfekndczipvsravunzv/Build/Products/Release-iphoneos",
-					"/Volumes/RamDisk/Library/Developer/Xcode/vividFaces-aavhjbkorhzelwblcenmynfthdtn/Build/Products/Release-iphoneos",
+					/Users/admin/Desktop/github/vividfaces/vividFacesDemo/buildInFramework,
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/buildInFramework",
 				);
 				INFOPLIST_FILE = "vividFacesDemo iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;

@@ -1,0 +1,11 @@
+framework module vividFaces {
+  umbrella header "vividFaces.h"
+
+  export *
+  module * { export * }
+}
+
+module vividFaces.Swift {
+    header "vividFaces-Swift.h"
+    requires objc
+}
