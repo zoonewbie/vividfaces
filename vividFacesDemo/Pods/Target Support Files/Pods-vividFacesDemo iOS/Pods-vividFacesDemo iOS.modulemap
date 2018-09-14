@@ -1,0 +1,6 @@
+framework module Pods_vividFacesDemo_iOS {
+  umbrella header "Pods-vividFacesDemo iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
