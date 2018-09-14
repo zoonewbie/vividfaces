@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5dx-bI-gpw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Entry Dispatch-->
+        <scene sceneID="N1Q-Q3-W2v">
+            <objects>
+                <viewController id="5dx-bI-gpw" customClass="EntryDispatch" customModule="vividFacesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FEN-tu-Pit"/>
+                        <viewControllerLayoutGuide type="bottom" id="mhL-zS-mHw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oh4-Rs-3Ds">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMj-5j-5AM" customClass="AnimView" customModule="vividFacesDemo" customModuleProvider="target">
+                                <rect key="frame" x="139.5" y="318.5" width="95" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="6iE-4A-Pk2"/>
+                                    <constraint firstAttribute="height" constant="30" id="pEa-f9-JvY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TMj-5j-5AM" firstAttribute="centerX" secondItem="Oh4-Rs-3Ds" secondAttribute="centerX" id="FTD-1R-N0X"/>
+                            <constraint firstItem="TMj-5j-5AM" firstAttribute="centerY" secondItem="Oh4-Rs-3Ds" secondAttribute="centerY" id="rRP-t3-JJd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadingView" destination="TMj-5j-5AM" id="SJO-r2-7CE"/>
+                        <segue destination="01J-lp-oVM" kind="show" identifier="segueBrainDownload" id="9df-RL-WKq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8eW-ER-8i7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1074.4000000000001" y="388.15592203898052"/>
+        </scene>
+        <!--Brains View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" customClass="BrainsViewController" customModule="vividFacesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FLe-vC-fKR" customClass="M13ProgressViewImage">
+                                <rect key="frame" x="27.5" y="173.5" width="320" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="c7x-JX-zzQ"/>
+                                    <constraint firstAttribute="width" constant="320" id="syL-C1-SPC"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Brain injecting...." textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="sX9-aQ-NeQ">
+                                <rect key="frame" x="131" y="518.5" width="112" height="17"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FLe-vC-fKR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0eI-GI-Gzg"/>
+                            <constraint firstItem="sX9-aQ-NeQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-0.5" id="2yd-dM-y8c"/>
+                            <constraint firstItem="sX9-aQ-NeQ" firstAttribute="top" secondItem="FLe-vC-fKR" secondAttribute="bottom" constant="25" id="asI-MM-W9y"/>
+                            <constraint firstItem="FLe-vC-fKR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ycw-T2-Hdy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="FLe-vC-fKR" id="Nz8-pb-ogt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "AnimStringReader.fromText(_:_:_:):AnimStringReader.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "targetName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameController.findLandmarkFromImage(_:):GameController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.landmarkImageView">
+            </PersistentString>
+            <PersistentString
+               value = "self.landmarkImage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #2 in static MServices.uploadModel(timeToken:brainTypeId:modelFile:callback:):MServices.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.result.value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Model.findTargetIndex(_:_:):Model.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "rightEye.morphNames_Runtime![targetName]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
