@@ -43,7 +43,7 @@ The tensorflow framework used in the demo is a customized version of tf 1.8. It 
 
 The frcnn model build here is also the customized one. Because the process of building it is too complicated so the details of how to make it will be not describe here. Google’s object detection has the code of keypoints detection half made but after testing none of their models works (untill Sep. 2018). 
 
-Actually none of any open tensorflow facial keypoints detections projects works currently if the keypoints number is bigger than 10 (untill Sep. 2018). So, we decided to make one. It is not fully completed but helped by some unproved mathematical theories it has show great promising.  
+Actually none of any open tensorflow facial keypoints detections projects works currently if the keypoints number is bigger than 10 (untill Sep. 2018). So, we decided to make one. It is not fully completed but helped by some unproved mathematical theories it has shown great accuracy.
 
 The version published now only contained the model pb file. The checkpoint data is not included. You can train the model yourself on your mobiles.
 
