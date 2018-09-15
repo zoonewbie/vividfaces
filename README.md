@@ -1,5 +1,6 @@
 # vividfaces
-Tensorflow on mobile platform for landmark and 3D morph modelling
+
+A demo of applying FRCNN on mobile platforms for extracting and training facial landmarks and 3D morph animations.
 
 
 Installation
