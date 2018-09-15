@@ -2,7 +2,7 @@
               
 ![Vividfaces](https://raw.githubusercontent.com/zoonewbie/vividfaces/master/launchScreengh.png) 
 
-A demo of applying FRCNN on mobile platforms for extracting and training facial landmarks and 3D morph animations.
+A demo of applying FRCNN on mobile platforms for extracting and training facial landmarks and 3D morph animations. Currently (Sep. 2018) the only open tensorflow model for extracting facial landmark keypoints. 
 
 ## Installation
 ### IOS
