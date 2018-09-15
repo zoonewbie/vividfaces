@@ -1,6 +1,6 @@
 # vividfaces
               
-![Vividfaces](https://github.com/zoonewbie/vividfaces/raw/master/launchscreengh.png) 
+![Vividfaces](https://raw.githubusercontent.com/zoonewbie/vividfaces/master/launchScreengh.png) 
 
 A demo of applying FRCNN on mobile platforms for extracting and training facial landmarks and 3D morph animations.
 
@@ -15,4 +15,4 @@ Because the github does not support file larger than 100M. But the binary of tf 
 ## Build and Run
 Tensorflow currently is not working on simulators. Make sure the xcode is building for devices or Generic iOS Device.
 
-![demo](https://github.com/zoonewbie/vividfaces/raw/master/screenshotgp.jpg) 
+![demo](https://raw.githubusercontent.com/zoonewbie/vividfaces/master/screenshotgp.jpg) 
