@@ -24,7 +24,7 @@ Tensorflow currently is not working on simulators. Make sure the xcode is buildi
 
 Framework vividFacesTrainHelper integrates iOS API VNImageRequestHandler providing facial landmark training data. 
 
-In the demo UI the white box with green points is the result of iOS detection; the white box with green points is the prediction of the model.
+In the demo UI the white box with green points indicate the result of iOS detection; the white box with green points is the prediction of the model.
 
 
 The image source can be camera, video and web images.
@@ -41,7 +41,7 @@ But you can recreate 3d models of your own based on the same facial morph struct
 
 The tensorflow framework used in the demo is a customized version of tf 1.8. It is not compatible with the one published by google.
 
-The frcnn model build here is also the customized one. Because the process of building it is too complicated so the details of how to make it will be not describe here. Google’s object detection has the ability of keypoints detection half made but after testing none of their models works (untill Sep. 2018). 
+The frcnn model build here is also the customized one. Because the process of building it is too complicated so the details of how to make it will be not describe here. Google’s object detection has the code of keypoints detection half made but after testing none of their models works (untill Sep. 2018). 
 
 Actually none of any open tensorflow facial keypoints detections projects works currently if the keypoints nuber is bigger than 10 (untill Sep. 2018). So, we decided to make one. It is not fully completed but helped by some unproved mathematical theories it has show great promising.  
 
