@@ -199,7 +199,7 @@ class GameViewController: UIViewController {
         }
         let videoURL = Bundle.main.url(forResource: "Art.scnassets/MarcoRubio", withExtension: "mp4")
         //var videoURL  = NSURL(string: "http://192.168.2.4/a\(test_del_vid%4).mp4")
-        UIInterfaceQMUI.shoToast(text: "Find a mp4 on the web and replace the code here. Make sure is support streaming.")
+        UIInterfaceQMUI.shoToast(text: "Find a mp4 on the web and replace the code here. Make sure it supports streaming.")
         let trainsrcBlock : (UIImage) -> ([[CGPoint]]?) = trainSrc!.trainImageBlock()
         self.gameController.sourceVideoTrain(previewView: self.previewView, videoURL: videoURL! as URL, trainsrcBlock: trainsrcBlock)
         self.gameView.setNeedsLayout()
