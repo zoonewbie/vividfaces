@@ -31,7 +31,7 @@ The image source can be camera, video and web images.
 
 The demo uses the image vision web resource from the website of The Computer Vision Laboratory of  Computer Science Department of University of Massachusetts (http://vis-www.cs.umass.edu). These images are small and because the human heads are all centered in the image, the training base on only these images will be leaded to wrong direction. (If the university find it is annoying of using their web resources in this demo, please let we know, we will remove it.)
 
-The mp4 streaming video is ideally as training resources. Check the function trainVideo for more detail.
+The mp4 streaming video is a good choice of training resources. Check the function trainVideo for more detail.
 
 # About the Animoji 3D models used in the demo
 Animoji is the product of Apple inc. (https://apple.com/ ) which is first introduced in iPhone X in 2017. The 3D cartoon model files are assets of apple and can be achieved on the internet. Note the Animoji of Apple is not open and free.
@@ -41,7 +41,7 @@ But you can recreate 3d models of your own based on the same facial morph struct
 
 The tensorflow framework used in the demo is a customized version of tf 1.8. It is not compatible with the one published by google.
 
-The frcnn model build here is also the customized one. Because the process of building it is too complicated so the details of how to make it will be not describe here. Google’s object detection has the code of keypoints detection half made but after testing none of their models works (untill Sep. 2018). 
+The frcnn model build here is also the customized one. Because the process of building it is too complicated so the details of how to make it will not be described here. Google’s object detection has the code of keypoints detection half made but after testing none of their models works (untill Sep. 2018). 
 
 Actually none of any open tensorflow facial keypoints detections projects works currently if the keypoints number is bigger than 10 (untill Sep. 2018). So, we decided to make one. It is not fully completed but helped by some unproved mathematical theories it has shown great accuracy.
 
