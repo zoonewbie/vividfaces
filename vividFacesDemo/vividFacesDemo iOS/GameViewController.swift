@@ -2,7 +2,7 @@ import UIKit
 import SceneKit
 import vividFaces
 import vividFacesTrainHelper//Optional
-
+//Fix memory leak
 class GameViewController: UIViewController {
     var gameView: SCNView {
         return self.view as! SCNView
@@ -269,3 +269,4 @@ class GameViewController: UIViewController {
         return true
     }
 }
+
