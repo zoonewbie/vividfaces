@@ -36,7 +36,7 @@ class GameViewController: UIViewController {
         nextButton.tintColor = .white
         nextButton.addTarget(self, action: #selector(nextModel), for: .touchUpInside)
         self.gameView.addSubview(nextButton)
-        buttonList.append(nextButton)
+        //buttonList.append(nextButton)
         
         let sourceCameraButton = UIButton(type: .system)
         sourceCameraButton.frame = CGRect(x: 70, y: 100, width: 140, height: 35)
@@ -131,7 +131,7 @@ class GameViewController: UIViewController {
     @objc func nextModel(sender : UIButton) {
         print("Next button pressed!")
         highlightButton(currentBtn: sender)
-        clearState()
+        //clearState()
         currentModelIndex = (currentModelIndex + 1) % modelNames.count
         gameController.loadModel(modelName: modelNames[currentModelIndex], modelUrl: modelUrls[currentModelIndex]!)
     }
@@ -197,9 +197,9 @@ class GameViewController: UIViewController {
         if trainSrc == nil {
             trainSrc = Landmark65TrainSrc()
         }
-        let videoURL = Bundle.main.url(forResource: "Art.scnassets/MarcoRubio", withExtension: "mp4")
-        //var videoURL  = NSURL(string: "http://192.168.2.4/a\(test_del_vid%4).mp4")
-        UIInterfaceQMUI.shoToast(text: "Find a mp4 on the web and replace the code here. Make sure is support streaming.")
+        //let videoURL = Bundle.main.url(forResource: "Art.scnassets/MarcoRubio", withExtension: "mp4")
+        var videoURL  = NSURL(string: "http://192.168.2.4/a0.mp4")
+        UIInterfaceQMUI.shoToast(text: "Find a mp4 on the web and replace the code here. Make sure it supports streaming.")
         let trainsrcBlock : (UIImage) -> ([[CGPoint]]?) = trainSrc!.trainImageBlock()
         self.gameController.sourceVideoTrain(previewView: self.previewView, videoURL: videoURL! as URL, trainsrcBlock: trainsrcBlock)
         self.gameView.setNeedsLayout()
