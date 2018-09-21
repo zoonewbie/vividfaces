@@ -22,7 +22,7 @@ Tensorflow currently is not working on simulators. Make sure the xcode is buildi
 
 ![demo](https://raw.githubusercontent.com/zoonewbie/vividfaces/master/landmark.jpg) 
 
-Framework vividFacesTrainHelper integrates iOS API VNImageRequestHandler providing facial landmark training data. 
+Framework vividFacesTrainHelper https://github.com/zoonewbie/vividFacesTrainHelper integrates iOS API VNImageRequestHandler and openCV providing facial landmark training data. 
 
 In the demo UI the white box with green points indicate the result of iOS detection; the white box with green points is the prediction of the model.
 
