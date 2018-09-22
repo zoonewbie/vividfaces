@@ -22,7 +22,7 @@ Tensorflow currently is not working on simulators. Make sure the xcode is buildi
 
 ![demo](https://raw.githubusercontent.com/zoonewbie/vividfaces/master/landmark.jpg) 
 
-Framework vividFacesTrainHelper integrates iOS API VNImageRequestHandler providing facial landmark training data. 
+Framework vividFacesTrainHelper https://github.com/zoonewbie/vividFacesTrainHelper integrates iOS API VNImageRequestHandler and openCV providing facial landmark training data. 
 
 In the demo UI the white box with green points indicate the result of iOS detection; the white box with green points is the prediction of the model.
 
@@ -34,7 +34,7 @@ The demo uses the image vision web resource from the website of The Computer Vis
 The mp4 streaming video is a good choice of training resources. Check the function trainVideo for more detail.
 
 # About the Animoji 3D models used in the demo
-Animoji is the product of Apple inc. (https://apple.com/ ) which is first introduced in iPhone X in 2017. The 3D cartoon model files are assets of apple and can be achieved on the internet. Note the Animoji of Apple is not open and free.
+Animoji is the product of Apple inc. (https://apple.com/ ) which is first introduced in iPhone X in 2017. The 3D cartoon model files are assets of apple and can be found on the internet. Note the Animoji of Apple is not open and free.
 VividFaces uses Animoji models only for research purpose. Please do not try to use this assets in your business software or even try to upload it to App store. Because it will be denied by apple.
 But you can recreate 3d models of your own based on the same facial morph structure. Anyone who has the 3D modeling knowledge will find these models followed same bone/morph/skin structure of the well-known opened productions. Even the same morph names had been used for decades. 
  ## Tensorflow modelling
