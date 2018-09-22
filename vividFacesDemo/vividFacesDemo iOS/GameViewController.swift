@@ -2,7 +2,7 @@ import UIKit
 import SceneKit
 import vividFaces
 import vividFacesTrainHelper//Optional
-//Fix memory leak
+
 class GameViewController: UIViewController {
     var gameView: SCNView {
         return self.view as! SCNView
@@ -143,7 +143,7 @@ class GameViewController: UIViewController {
             UIInterfaceQMUI.shoToast(text: "camera rejected")
             return
         }
-        gameController.sourceCamera(previewView: previewView, onReject: camerRejectBlock)
+        gameController.sourceCamera(onReject: camerRejectBlock)
         self.gameView.setNeedsLayout()
     }
     @objc func sourcePhoto(sender : UIButton) {
@@ -151,7 +151,7 @@ class GameViewController: UIViewController {
         highlightButton(currentBtn: sender)
         clearState()
         let images = [UIImage(named: "Art.scnassets/testImg.jpg"), UIImage(named: "Art.scnassets/testImg1.jpg")]
-        gameController.sourceImage(previewView: previewView, images:images as! [UIImage])
+        gameController.sourceImage(images:images as! [UIImage])
         self.gameView.setNeedsLayout()
     }
     @objc func sourceVideo(sender : UIButton) {
@@ -159,13 +159,13 @@ class GameViewController: UIViewController {
         highlightButton(currentBtn: sender)
         clearState()
         let videoURL = Bundle.main.url(forResource: "Art.scnassets/MarcoRubio", withExtension: "mp4")
-        gameController.sourceVideo(previewView: previewView, videoURL: videoURL!)
+        gameController.sourceVideo(videoURL: videoURL!)
         self.gameView.setNeedsLayout()
     }
     @objc func toggleShowLandmark(sender : UIButton) {
         print("toggleShowLandmark button pressed!")
         let newState = !gameController.isShowLandmarkInPreview()
-        gameController.setShowLandmarkInPreview(previewView: previewView, show: newState)
+        gameController.setShowLandmarkInPreview(show: newState)
         if newState {
             sender.tintColor = .yellow
         }else{
@@ -182,9 +182,9 @@ class GameViewController: UIViewController {
         if trainSrc == nil {
             trainSrc = Landmark65TrainSrc()
         }
-        self.gameController.sourceImageTrain(previewView: self.previewView)
+        self.gameController.sourceImageTrain()
         let trainBlock : (UIImage, [[CGPoint]]) -> () = {(image: UIImage, normalizedPoints: [[CGPoint]]) -> () in
-            self.gameController.trainImage(previewView: self.previewView, image:image, normalizedPoints: normalizedPoints)
+            self.gameController.trainImage(image:image, normalizedPoints: normalizedPoints)
             return
         }
         trainSrc!.trainWebImage(forTrain: trainBlock)
@@ -197,11 +197,11 @@ class GameViewController: UIViewController {
         if trainSrc == nil {
             trainSrc = Landmark65TrainSrc()
         }
-        //let videoURL = Bundle.main.url(forResource: "Art.scnassets/MarcoRubio", withExtension: "mp4")
-        var videoURL  = NSURL(string: "http://192.168.2.4/a0.mp4")
         UIInterfaceQMUI.shoToast(text: "Find a mp4 on the web and replace the code here. Make sure it supports streaming.")
+        let videoURL = Bundle.main.url(forResource: "Art.scnassets/MarcoRubio", withExtension: "mp4")
+        //var videoURL  = NSURL(string: "http://192.168.2.4/a0.mp4")
         let trainsrcBlock : (UIImage) -> ([[CGPoint]]?) = trainSrc!.trainImageBlock()
-        self.gameController.sourceVideoTrain(previewView: self.previewView, videoURL: videoURL! as URL, trainsrcBlock: trainsrcBlock)
+        self.gameController.sourceVideoTrain(videoURL: videoURL! as URL, trainsrcBlock: trainsrcBlock)
         self.gameView.setNeedsLayout()
     }
     @objc func trainCamera(sender : UIButton) {
@@ -217,12 +217,12 @@ class GameViewController: UIViewController {
             UIInterfaceQMUI.shoToast(text: "camera rejected")
             return
         }
-        gameController.sourceCameraTrain(previewView: previewView, trainsrcBlock: trainsrcBlock, onReject: camerRejectBlock)
+        gameController.sourceCameraTrain(trainsrcBlock: trainsrcBlock, onReject: camerRejectBlock)
         self.gameView.setNeedsLayout()
     }
     @objc func switchCamera(sender : UIButton) {
         print("switchCamera button pressed!")
-        gameController.switchCamera(previewView: previewView)
+        gameController.switchCamera()
         self.gameView.setNeedsLayout()
     }
     func clearState(){
@@ -238,10 +238,9 @@ class GameViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        //updatePreviewLayer()
         previewView.frame =
             CGRect(x: 300,
-                   y: 10,
+                   y: 00,
                    width: UIScreen.main.bounds.size.width/previewSizeFrationX,
                    height: UIScreen.main.bounds.size.height/previewSizeFrationY)
         gameController.updatePreviewLayer(previewView: previewView)
@@ -269,4 +268,3 @@ class GameViewController: UIViewController {
         return true
     }
 }
-
