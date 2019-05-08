@@ -4,6 +4,10 @@
 
 A demo of applying FRCNN on mobile platforms for extracting and training facial landmarks and 3D morph animations. Currently (Sep. 2018) the only working open tensorflow model for extracting facial landmark keypoints. 
 
+|    Training sample on TPU STEP 100K   |    Training sample on TPU STEP 100K   |
+:--------------------------:|:-------------------------:
+![](https://github.com/zoonewbie/vividfaces/raw/master/individualImage.png)  |  ![](https://github.com/zoonewbie/vividfaces/raw/master/individualImage2.png)
+
 ## Installation
 ### IOS
 Download the project. 
