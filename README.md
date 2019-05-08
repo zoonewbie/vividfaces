@@ -49,7 +49,7 @@ The frcnn model build here is also the customized one. Because the process of bu
 
 Actually none of any open tensorflow facial keypoints detections projects works currently if the keypoints number is bigger than 10 (untill Sep. 2018). So, we decided to make one. It is not fully completed but helped by some unproved mathematical theories it has shown great accuracy.
 
-The version published now only contained the model pb file. The checkpoint data is not included. You can train the model yourself on your mobiles.
+The version published now only contained the model pb file. The checkpoint data is not included. You can train the model yourself on your mobiles. You will not get final result, but you can observe how training works on your devices. 
 
 A more accurate facial landmark and morph modelling is coming soon.
 
